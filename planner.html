@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AKAZA (Abdurrahman Oriolowo) - Frontend Developer and Computer Science undergraduate portfolio.">
+  <title>Academic Planner | AKAZA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header and navigation (same on every page) -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html">AKA<span>ZA</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active" aria-current="page">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-banner">
+      <div class="container">
+        <h1>Academic Planner</h1>
+        <p class="section-intro">Add your tasks, mark them as completed and delete them when you are done. Tasks are saved in your browser.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <form id="taskForm" class="card planner-form" novalidate>
+          <div>
+            <label for="taskTitle">Task title</label>
+            <input type="text" id="taskTitle" placeholder="e.g. Finish COS 106 project">
+          </div>
+          <div>
+            <label for="taskCourse">Course (optional)</label>
+            <input type="text" id="taskCourse" placeholder="e.g. COS 106">
+          </div>
+          <div>
+            <label for="taskDue">Due date (optional)</label>
+            <input type="date" id="taskDue">
+          </div>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+        <p class="error" id="taskError" role="alert"></p>
+
+        <div class="stats-row">
+          <div class="card stat"><strong id="statTotal">0</strong>Total Tasks</div>
+          <div class="card stat"><strong id="statDone">0</strong>Completed</div>
+          <div class="card stat"><strong id="statPending">0</strong>Pending</div>
+        </div>
+
+        <h2>My Tasks</h2>
+        <ul class="task-list" id="taskList" aria-live="polite" style="margin-top:1rem"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 Abdurrahman Oriolowo (AKAZA). Code with purpose. Build with impact.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

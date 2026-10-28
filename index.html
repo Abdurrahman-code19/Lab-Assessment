@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AKAZA (Abdurrahman Oriolowo) - Frontend Developer and Computer Science undergraduate portfolio.">
+  <title>Home | AKAZA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header and navigation-->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html">AKA<span>ZA</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <article>
+          <h1>AKAZA</h1>
+          <p class="name">Abdurrahman Oriolowo</p>
+          <p class="title">Frontend Developer | CS Undergraduate</p>
+          <p>Welcome to my digital space, where technology, creativity and continuous learning come together.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="projects.html">Explore My Work</a>
+            <a class="btn" href="about.html">About Me</a>
+            <a class="btn btn-gold" href="contact.html">Contact Me</a>
+          </div>
+        </article>
+        <figure class="photo-frame">
+          <div class="photo-inner">
+            <span>Profile Photo</span>
+            <img id="profileImg" src="images/project-1.png" alt="Portrait of Abdurrahman Oriolowo (AKAZA)">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section>
+      <div class="container grid grid-4 reveal">
+        <div class="card stat"><strong>100 Level</strong>Computer Science Student</div>
+        <div class="card stat"><strong>Tutor</strong>Frontend Development</div>
+        <div class="card stat"><strong>Certified</strong>Software Development</div>
+        <div class="card stat"><strong>Web</strong>Development Focus</div>
+      </div>
+    </section>
+
+    <!-- Biography and skills preview -->
+    <section>
+      <div class="container grid grid-2">
+        <article class="card reveal">
+          <h2>Brief Biography</h2>
+          <p>I am a Computer Science undergraduate at Miva Open University and a Frontend Developer based in Lagos, Nigeria. I enjoy creating modern, responsive and user-friendly websites, and I teach frontend development at RIIT GLOBAL TECH. My long-term goal is to become a full-stack developer.</p>
+          <div class="btn-row"><a class="btn btn-small" href="about.html">Read more</a></div>
+        </article>
+        <aside class="card reveal">
+          <h2>Skills Preview</h2>
+          <p>Some of the tools and technologies I work with:</p>
+          <ul class="chips" style="list-style:none;padding:0"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">JavaScript</li><li class="chip">React</li><li class="chip">Python</li><li class="chip">Tailwind CSS</li></ul>
+          <div class="btn-row"><a class="btn btn-small" href="about.html#skills">See all skills</a></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Multimedia section (video) -->
+    <section>
+      <div class="container reveal">
+        <h2>Watch My Introduction</h2>
+        <p class="section-intro">A short video introducing me and my work.</p>
+        <div class="video-box">
+          <video id="introVideo" controls preload="metadata">
+            <source src="media/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 Abdurrahman Oriolowo (AKAZA). Code with purpose. Build with impact.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
